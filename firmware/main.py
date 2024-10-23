@@ -26,6 +26,12 @@ xxxxxxx = KC.NO
 _______ = KC.TRNS
 RAISE = KC.MO(1)
 LOWER = KC.MO(2)
+NAV = KC.MO(3)
+SYM = KC.MO(4)
+NUM = KC.MO(5)
+
+# More aliases
+HK = KC.LSFT(KC.NUHS)  # HochKomma
 
 # Keymap
 # fmt: off
@@ -33,10 +39,10 @@ keyboard.keymap = [
     [
        #BASE
        #     |        |        |        |        |        |        | |        |        |        |        |        |        |        |
-                  KC.Q,    KC.W,    KC.E,    KC.R,    KC.T,                        KC.Y,    KC.U,    KC.I,    KC.O,    KC.P,         \
-        KC.N1,    KC.A,    KC.S,    KC.D,    KC.F,    KC.G,                        KC.H,    KC.J,    KC.K,    KC.L, KC.SCLN, KC.N1,  \
-        KC.N2,    KC.Z,    KC.X,    KC.C,    KC.V,    KC.B, KC.MUTE,   KC.MPLY,    KC.N,    KC.M, KC.COMM,  KC.DOT, KC.SLSH, KC.N2,  \
-                        KC.LCTL,   LOWER,  KC.SPC,   KC.N4,                       KC.N4, KC.BSPC,   RAISE,  KC.ENT,
+                  KC.W,    KC.F,    KC.M,    KC.P,    KC.V,                        HK,    KC.DOT, xxxxxxx,    KC.Y, xxxxxxx,         \
+        KC.N1,    KC.R,    KC.S,    KC.N,    KC.T,    KC.B,                        KC.COMM, KC.A,    KC.E,    KC.I, KC.H, KC.N1,  \
+        KC.N2,    KC.X,    KC.C,    KC.L,    KC.D,    KC.G, KC.MUTE,   KC.MPLY,    xxxxxxx, KC.U,    KC.O,    KC.Z, KC.K, KC.N2,  \
+                        NAV,   KC.LSFT,  xxxxxxx,   KC.N4,                       KC.N4, xxxxxxx, KC.SPC,    SYM,
 
         # Encoders
         KC.AUDIO_VOL_UP,      #Left side clockwise
